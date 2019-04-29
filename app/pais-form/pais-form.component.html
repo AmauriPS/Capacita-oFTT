@@ -1,0 +1,13 @@
+<p>
+  Cadastrar
+</p>
+
+<form [formGroup]="paisForm">
+  Nome:<input type="text" formControlName="nome">
+  <button (click)="save(paisForm.value)">Salvar</button>
+</form>
+
+<hr>
+ {{paisForm.value | json}}
+
+
